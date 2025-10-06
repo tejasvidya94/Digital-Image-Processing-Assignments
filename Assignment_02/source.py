@@ -3,6 +3,7 @@ import cv2
 # Read image default mode
 image = cv2.imread("sample.jpg")
 
+
 # check if the image is loaded successfully
 if image is None:
     raise FileNotFoundError("Image File not found.")
@@ -15,5 +16,9 @@ cv2.imshow('Original image', image)
 cv2.imshow('Negative Image', negative_image)
 
 # wait and then close window
-cv2.wait(0)
+cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+
+# Save the modified image
+cv2.imwrite('converted_image.jpg', negative_image)
