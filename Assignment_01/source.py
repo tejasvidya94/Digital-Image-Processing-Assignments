@@ -18,7 +18,7 @@ gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 # Display modified image
 cv2.imshow('Grayscale Image',gray_image)
-cv2.wait(0)
+cv2.waitkey(0)
 cv2.destroyAllWindows()
 
 # Save the modified image
