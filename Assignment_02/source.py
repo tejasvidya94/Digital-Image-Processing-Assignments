@@ -1,3 +1,4 @@
+# Q.Convert the image into negative using openCV.
 import cv2
 
 # Read image default mode
